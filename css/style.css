@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(257, 40%, 49%);
+}
+.main {
+  width: 80%;
+  margin: 2em auto;
+}
+.header img {
+  max-width: 130px;
+}
+.header {
+  margin-bottom: 3.1em;
+}
+.banner {
+  margin-bottom: 4em;
+}
+.content {
+  color: #fff;
+  text-align: center;
+}
+.main-content h1 {
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  margin-bottom: 2rem;
+}
+button {
+  border: none;
+  width: 70%;
+  padding: 0.9em;
+  border-radius: 25px;
+  color: hsl(257, 40%, 49%);
+  font-size: 1rem;
+  margin-bottom: 4em;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+@media (max-width: 480px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  .banner img {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+  .main {
+    width: 90%;
+    margin: 4em auto 0 auto;
+  }
+  .header img {
+    max-width: 150px;
+  }
+  .header {
+    margin-bottom: 5.5em;
+  }
+  .main-container {
+    display: flex;
+    gap: 2em;
+  }
+  .main-content {
+    display: block;
+  }
+  .main-content h1 {
+    font-size: 2rem;
+    text-align: start;
+    margin-top: 1.5em;
+  }
+  .main-content p {
+    text-align: left;
+  }
+  button {
+    width: 30%;
+    margin-right: 25em;
+  }
+  .banner {
+    margin: 0;
+  }
+
+  .social-media {
+    place-content: end;
+    margin-top: 6em;
+  }
+}
